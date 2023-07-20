@@ -107,8 +107,12 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 
 // CODE HERE
 
-const getNewPrice=orders.map((order)=>order.price+order.price*order.tax)
+const getNewPrice=orders.map((order)=>(order.price*(1+order.tax)).toFixed(2))
 console.log(getNewPrice)
+
+
+
+
 
 ////////// PROBLEM 6 //////////
 
